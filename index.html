@@ -113,70 +113,140 @@
     </section>
 
     <div class="ribbon-container max-w-7xl mx-auto px-6 mb-24">
-        <div class="grid md:grid-cols-4 gap-4 md:gap-6">
-            <div class="bg-white rounded-xl shadow-xl border border-slate-100 p-4 md:p-6 glow-hover group cursor-pointer" onclick="toggleAccordion('content-about', this)">
-                <div class="flex items-center justify-between mb-3 md:mb-4">
-                    <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
-                        <i class="fas fa-building text-base md:text-xl"></i>
+        <div class="grid md:grid-cols-4 gap-3 md:gap-6">
+            
+            <div class="bg-white rounded-lg md:rounded-xl shadow-sm md:shadow-xl border border-slate-100 p-3 md:p-6 glow-hover group cursor-pointer" onclick="toggleAccordion('content-about', this)">
+                
+                <div class="flex md:hidden items-center justify-between w-full">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange shrink-0 group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
+                            <i class="fas fa-building text-[10px]"></i>
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <h3 class="text-[13px] text-slate-900 heading-font uppercase leading-tight">About The Company</h3>
+                            <div class="h-[2px] w-6 bg-brand-red rounded mt-0.5"></div>
+                        </div>
                     </div>
-                    <i class="fas fa-plus text-slate-400 transition-transform duration-300 text-sm md:text-base"></i>
+                    <i class="fas fa-plus text-slate-400 transition-transform duration-300 text-xs shrink-0 ml-2"></i>
                 </div>
-                <h3 class="text-base md:text-lg text-slate-900 heading-font uppercase mb-2">About The Company</h3>
-                <div class="h-1 w-10 md:w-12 bg-brand-red rounded mb-3 md:mb-4"></div>
+
+                <div class="hidden md:block">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
+                            <i class="fas fa-building text-xl"></i>
+                        </div>
+                        <i class="fas fa-plus text-slate-400 transition-transform duration-300 text-base"></i>
+                    </div>
+                    <h3 class="text-lg text-slate-900 heading-font uppercase mb-2">About The Company</h3>
+                    <div class="h-1 w-12 bg-brand-red rounded mb-4"></div>
+                </div>
+
                 <div id="content-about" class="expand-content max-h-0 opacity-0 overflow-hidden">
-                    <p class="text-xs md:text-sm text-slate-600 leading-relaxed mt-3 md:mt-4 pt-3 md:pt-4 border-t border-slate-100">
+                    <p class="text-[13px] md:text-sm text-slate-600 leading-relaxed mt-3 md:mt-0 pt-3 md:pt-0 border-t border-slate-100 md:border-none">
                         Arise Operations and Projects is a 100% black-owned company. We operate as a Joint-Venture business in partnership with Mmaphuthi Business Enterprise, bringing excellence to the local property sector.
                     </p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-xl border border-slate-100 p-4 md:p-6 glow-hover group cursor-pointer" onclick="toggleAccordion('content-business', this)">
-                <div class="flex items-center justify-between mb-3 md:mb-4">
-                    <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
-                        <i class="fas fa-graduation-cap text-base md:text-xl"></i>
+            <div class="bg-white rounded-lg md:rounded-xl shadow-sm md:shadow-xl border border-slate-100 p-3 md:p-6 glow-hover group cursor-pointer" onclick="toggleAccordion('content-business', this)">
+                
+                <div class="flex md:hidden items-center justify-between w-full">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange shrink-0 group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
+                            <i class="fas fa-graduation-cap text-[10px]"></i>
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <h3 class="text-[13px] text-slate-900 heading-font uppercase leading-tight">Core Business</h3>
+                            <div class="h-[2px] w-6 bg-brand-red rounded mt-0.5"></div>
+                        </div>
                     </div>
-                    <i class="fas fa-plus text-slate-400 transition-transform duration-300 text-sm md:text-base"></i>
+                    <i class="fas fa-plus text-slate-400 transition-transform duration-300 text-xs shrink-0 ml-2"></i>
                 </div>
-                <h3 class="text-base md:text-lg text-slate-900 heading-font uppercase mb-2">Core Business</h3>
-                <div class="h-1 w-10 md:w-12 bg-brand-red rounded mb-3 md:mb-4"></div>
+
+                <div class="hidden md:block">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
+                            <i class="fas fa-graduation-cap text-xl"></i>
+                        </div>
+                        <i class="fas fa-plus text-slate-400 transition-transform duration-300 text-base"></i>
+                    </div>
+                    <h3 class="text-lg text-slate-900 heading-font uppercase mb-2">Core Business</h3>
+                    <div class="h-1 w-12 bg-brand-red rounded mb-4"></div>
+                </div>
+
                 <div id="content-business" class="expand-content max-h-0 opacity-0 overflow-hidden">
-                    <p class="text-xs md:text-sm text-slate-600 leading-relaxed mt-3 md:mt-4 pt-3 md:pt-4 border-t border-slate-100">
+                    <p class="text-[13px] md:text-sm text-slate-600 leading-relaxed mt-3 md:mt-0 pt-3 md:pt-0 border-t border-slate-100 md:border-none">
                         We facilitate CBD RESIDENCY, an accredited student housing provider. With a capacity for more than 2500 students, our facilities feature fully furnished units, 24/7 security, high-speed internet, and dedicated transport logistics.
                     </p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-xl border border-slate-100 p-4 md:p-6 glow-hover group cursor-pointer" onclick="toggleAccordion('content-objectives', this)">
-                <div class="flex items-center justify-between mb-3 md:mb-4">
-                    <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
-                        <i class="fas fa-bullseye text-base md:text-xl"></i>
+            <div class="bg-white rounded-lg md:rounded-xl shadow-sm md:shadow-xl border border-slate-100 p-3 md:p-6 glow-hover group cursor-pointer" onclick="toggleAccordion('content-objectives', this)">
+                
+                <div class="flex md:hidden items-center justify-between w-full">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange shrink-0 group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
+                            <i class="fas fa-bullseye text-[10px]"></i>
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <h3 class="text-[13px] text-slate-900 heading-font uppercase leading-tight">Key Objectives</h3>
+                            <div class="h-[2px] w-6 bg-brand-red rounded mt-0.5"></div>
+                        </div>
                     </div>
-                    <i class="fas fa-plus text-slate-400 transition-transform duration-300 text-sm md:text-base"></i>
+                    <i class="fas fa-plus text-slate-400 transition-transform duration-300 text-xs shrink-0 ml-2"></i>
                 </div>
-                <h3 class="text-base md:text-lg text-slate-900 heading-font uppercase mb-2">Key Objectives</h3>
-                <div class="h-1 w-10 md:w-12 bg-brand-red rounded mb-3 md:mb-4"></div>
+
+                <div class="hidden md:block">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
+                            <i class="fas fa-bullseye text-xl"></i>
+                        </div>
+                        <i class="fas fa-plus text-slate-400 transition-transform duration-300 text-base"></i>
+                    </div>
+                    <h3 class="text-lg text-slate-900 heading-font uppercase mb-2">Key Objectives</h3>
+                    <div class="h-1 w-12 bg-brand-red rounded mb-4"></div>
+                </div>
+
                 <div id="content-objectives" class="expand-content max-h-0 opacity-0 overflow-hidden">
-                    <p class="text-xs md:text-sm text-slate-600 leading-relaxed mt-3 md:mt-4 pt-3 md:pt-4 border-t border-slate-100">
+                    <p class="text-[13px] md:text-sm text-slate-600 leading-relaxed mt-3 md:mt-0 pt-3 md:pt-0 border-t border-slate-100 md:border-none">
                         Expanding our portfolio by constructing modern housing. We implement sustainable construction practices, utilizing eco-friendly materials to reduce environmental impact while aggressively diversifying our real estate investments.
                     </p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-xl border border-slate-100 p-4 md:p-6 glow-hover group cursor-pointer" onclick="toggleAccordion('content-values', this)">
-                <div class="flex items-center justify-between mb-3 md:mb-4">
-                    <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
-                        <i class="fas fa-handshake text-base md:text-xl"></i>
+            <div class="bg-white rounded-lg md:rounded-xl shadow-sm md:shadow-xl border border-slate-100 p-3 md:p-6 glow-hover group cursor-pointer" onclick="toggleAccordion('content-values', this)">
+                
+                <div class="flex md:hidden items-center justify-between w-full">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange shrink-0 group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
+                            <i class="fas fa-handshake text-[10px]"></i>
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <h3 class="text-[13px] text-slate-900 heading-font uppercase leading-tight">Core Values</h3>
+                            <div class="h-[2px] w-6 bg-brand-red rounded mt-0.5"></div>
+                        </div>
                     </div>
-                    <i class="fas fa-plus text-slate-400 transition-transform duration-300 text-sm md:text-base"></i>
+                    <i class="fas fa-plus text-slate-400 transition-transform duration-300 text-xs shrink-0 ml-2"></i>
                 </div>
-                <h3 class="text-base md:text-lg text-slate-900 heading-font uppercase mb-2">Core Values</h3>
-                <div class="h-1 w-10 md:w-12 bg-brand-red rounded mb-3 md:mb-4"></div>
+
+                <div class="hidden md:block">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
+                            <i class="fas fa-handshake text-xl"></i>
+                        </div>
+                        <i class="fas fa-plus text-slate-400 transition-transform duration-300 text-base"></i>
+                    </div>
+                    <h3 class="text-lg text-slate-900 heading-font uppercase mb-2">Core Values</h3>
+                    <div class="h-1 w-12 bg-brand-red rounded mb-4"></div>
+                </div>
+
                 <div id="content-values" class="expand-content max-h-0 opacity-0 overflow-hidden">
-                    <p class="text-xs md:text-sm text-slate-600 leading-relaxed mt-3 md:mt-4 pt-3 md:pt-4 border-t border-slate-100">
+                    <p class="text-[13px] md:text-sm text-slate-600 leading-relaxed mt-3 md:mt-0 pt-3 md:pt-0 border-t border-slate-100 md:border-none">
                         We integrate absolute honesty, integrity, and business ethics into all operations. Our pillars include Strong Leadership, Teamwork, Continuous Innovation, Determination, and Fair-mindedness.
                     </p>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -430,35 +500,35 @@
             }
         }
 
-        // Accordion Toggle Logic (Independent)
+        // Independent Accordion Toggle Logic
         function toggleAccordion(id, btnElement) {
             const content = document.getElementById(id);
-            // Look for either plus/minus icons (top ribbon) or chevron icons (divisions)
-            const icon = btnElement.querySelector('i.fa-plus, i.fa-minus, i.fa-chevron-down');
+            // Look for all matching icons within THIS specific button (handles both mobile and desktop icons)
+            const icons = btnElement.querySelectorAll('i.fa-plus, i.fa-minus, i.fa-chevron-down');
 
-            // Toggle clicked element
+            // Toggle clicked element independently
             if (content.classList.contains('max-h-0')) {
                 content.classList.remove('max-h-0', 'opacity-0');
                 content.classList.add('max-h-[1000px]', 'opacity-100');
-                if(icon) { 
+                icons.forEach(icon => { 
                     if(icon.classList.contains('fa-plus')) {
                         icon.classList.remove('fa-plus'); 
                         icon.classList.add('fa-minus', 'rotate-180'); 
                     } else if(icon.classList.contains('fa-chevron-down')) {
                         icon.classList.add('rotate-180');
                     }
-                }
+                });
             } else {
                 content.classList.add('max-h-0', 'opacity-0');
                 content.classList.remove('max-h-[1000px]', 'opacity-100');
-                if(icon) { 
+                icons.forEach(icon => { 
                     if(icon.classList.contains('fa-minus')) {
                         icon.classList.remove('fa-minus', 'rotate-180'); 
                         icon.classList.add('fa-plus'); 
                     } else if(icon.classList.contains('fa-chevron-down')) {
                         icon.classList.remove('rotate-180');
                     }
-                }
+                });
             }
         }
     </script>
