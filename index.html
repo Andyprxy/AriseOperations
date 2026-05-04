@@ -58,37 +58,31 @@
 </head>
 <body class="antialiased selection:bg-brand-orange selection:text-white">
 
-    <!-- Top Navigation Ribbon with Mobile Support -->
     <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
         <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
-            <!-- Logo -->
             <a href="#" class="flex items-center gap-3 md:gap-4 cursor-pointer">
                 <img src="ariselogo1.png" alt="Arise Logo" class="h-10 md:h-12 w-auto object-contain drop-shadow-sm">
                 <div class="hidden md:block h-8 w-px bg-gray-300"></div>
                 <span class="hidden md:block text-xs font-bold tracking-widest text-slate-500 uppercase">Residency</span>
             </a>
             
-            <!-- Desktop Links -->
             <div class="hidden md:flex space-x-10 items-center text-sm font-medium text-slate-600 uppercase tracking-wide">
                 <a href="#divisions" class="hover:text-brand-orange transition duration-300">Our Divisions</a>
                 <a href="#market" class="hover:text-brand-orange transition duration-300">Sector Outlook</a>
                 <a href="#team" class="hover:text-brand-orange transition duration-300">Leadership</a>
             </div>
             
-            <!-- Actions (Contact Button + Mobile Menu Toggle) -->
             <div class="flex items-center gap-2 md:gap-4">
                 <a href="#contact" class="border-2 border-brand-orange text-slate-800 hover:bg-brand-orange hover:border-brand-orange hover:text-white px-3 md:px-6 py-1.5 md:py-2 rounded text-[10px] md:text-xs font-bold uppercase tracking-wider transition duration-300 flex items-center gap-2 shadow-sm">
                     Contact <span class="hidden md:inline">Us</span> <i class="fas fa-arrow-right hidden md:inline"></i>
                 </a>
                 
-                <!-- Mobile Menu Hamburger Icon -->
                 <button onclick="toggleMobileMenu()" class="md:hidden text-slate-800 focus:outline-none p-2 ml-1">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-100 px-6 space-y-2 max-h-0 overflow-hidden">
             <a href="#divisions" onclick="toggleMobileMenu()" class="block py-3 text-sm font-bold text-slate-600 uppercase">Our Divisions</a>
             <a href="#market" onclick="toggleMobileMenu()" class="block py-3 text-sm font-bold text-slate-600 uppercase border-t border-gray-50">Sector Outlook</a>
@@ -96,10 +90,8 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="relative min-h-[85vh] w-full overflow-hidden flex items-center justify-center pt-24 md:pt-0 bg-slate-900">
         <div class="absolute inset-0 z-0">
-            <!-- Image featuring Black professionals collaborating/exchanging documents in an office -->
             <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=2069&auto=format&fit=crop" class="w-full h-full object-cover opacity-50 mix-blend-overlay" alt="Black professionals exchanging documents in a corporate office">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
         </div>
@@ -120,14 +112,11 @@
         </div>
     </section>
 
-    <!-- Lower Interactive Ribbon (Table of Contents / Overview) -->
     <div class="ribbon-container max-w-7xl mx-auto px-6 mb-24">
         <div class="grid md:grid-cols-4 gap-3 md:gap-6">
             
-            <!-- Ribbon Item 1: About -->
             <div class="bg-white rounded-lg md:rounded-xl shadow-sm md:shadow-xl border border-slate-100 p-3 md:p-6 glow-hover group cursor-pointer" onclick="toggleAccordion('content-about', this)">
                 
-                <!-- Mobile Header (Ultra Slim) -->
                 <div class="flex md:hidden items-center justify-between w-full">
                     <div class="flex items-center gap-3">
                         <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange shrink-0 group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
@@ -141,7 +130,6 @@
                     <i class="fas fa-plus text-slate-400 transition-transform duration-300 text-xs shrink-0 ml-2"></i>
                 </div>
 
-                <!-- Desktop Header (Original) -->
                 <div class="hidden md:block">
                     <div class="flex items-center justify-between mb-4">
                         <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
@@ -153,7 +141,6 @@
                     <div class="h-1 w-12 bg-brand-red rounded mb-4"></div>
                 </div>
 
-                <!-- Shared Content -->
                 <div id="content-about" class="expand-content max-h-0 opacity-0 overflow-hidden">
                     <p class="text-[13px] md:text-sm text-slate-600 leading-relaxed mt-3 md:mt-0 pt-3 md:pt-0 border-t border-slate-100 md:border-none">
                         Arise Operations and Projects is a 100% black-owned company, bringing excellence to the local property sector.
@@ -161,10 +148,8 @@
                 </div>
             </div>
 
-            <!-- Ribbon Item 2: Core Business -->
             <div class="bg-white rounded-lg md:rounded-xl shadow-sm md:shadow-xl border border-slate-100 p-3 md:p-6 glow-hover group cursor-pointer" onclick="toggleAccordion('content-business', this)">
                 
-                <!-- Mobile Header (Ultra Slim) -->
                 <div class="flex md:hidden items-center justify-between w-full">
                     <div class="flex items-center gap-3">
                         <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange shrink-0 group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
@@ -178,7 +163,6 @@
                     <i class="fas fa-plus text-slate-400 transition-transform duration-300 text-xs shrink-0 ml-2"></i>
                 </div>
 
-                <!-- Desktop Header (Original) -->
                 <div class="hidden md:block">
                     <div class="flex items-center justify-between mb-4">
                         <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
@@ -190,7 +174,6 @@
                     <div class="h-1 w-12 bg-brand-red rounded mb-4"></div>
                 </div>
 
-                <!-- Shared Content -->
                 <div id="content-business" class="expand-content max-h-0 opacity-0 overflow-hidden">
                     <p class="text-[13px] md:text-sm text-slate-600 leading-relaxed mt-3 md:mt-0 pt-3 md:pt-0 border-t border-slate-100 md:border-none">
                         We facilitate several accredited student housing properties. With a capacity for more than 2500 students, our facilities feature fully furnished units, 24/7 security, high-speed internet, and dedicated transport logistics ranging from shuttles to buses.
@@ -198,10 +181,8 @@
                 </div>
             </div>
 
-            <!-- Ribbon Item 3: Objectives -->
             <div class="bg-white rounded-lg md:rounded-xl shadow-sm md:shadow-xl border border-slate-100 p-3 md:p-6 glow-hover group cursor-pointer" onclick="toggleAccordion('content-objectives', this)">
                 
-                <!-- Mobile Header (Ultra Slim) -->
                 <div class="flex md:hidden items-center justify-between w-full">
                     <div class="flex items-center gap-3">
                         <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange shrink-0 group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
@@ -215,7 +196,6 @@
                     <i class="fas fa-plus text-slate-400 transition-transform duration-300 text-xs shrink-0 ml-2"></i>
                 </div>
 
-                <!-- Desktop Header (Original) -->
                 <div class="hidden md:block">
                     <div class="flex items-center justify-between mb-4">
                         <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
@@ -227,7 +207,6 @@
                     <div class="h-1 w-12 bg-brand-red rounded mb-4"></div>
                 </div>
 
-                <!-- Shared Content -->
                 <div id="content-objectives" class="expand-content max-h-0 opacity-0 overflow-hidden">
                     <p class="text-[13px] md:text-sm text-slate-600 leading-relaxed mt-3 md:mt-0 pt-3 md:pt-0 border-t border-slate-100 md:border-none">
                         Expanding our portfolio by constructing modern housing. We implement sustainable construction practices, utilizing eco-friendly materials to reduce environmental impact while aggressively diversifying our real estate investments.
@@ -235,10 +214,8 @@
                 </div>
             </div>
 
-            <!-- Ribbon Item 4: Values -->
             <div class="bg-white rounded-lg md:rounded-xl shadow-sm md:shadow-xl border border-slate-100 p-3 md:p-6 glow-hover group cursor-pointer" onclick="toggleAccordion('content-values', this)">
                 
-                <!-- Mobile Header (Ultra Slim) -->
                 <div class="flex md:hidden items-center justify-between w-full">
                     <div class="flex items-center gap-3">
                         <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange shrink-0 group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
@@ -252,7 +229,6 @@
                     <i class="fas fa-plus text-slate-400 transition-transform duration-300 text-xs shrink-0 ml-2"></i>
                 </div>
 
-                <!-- Desktop Header (Original) -->
                 <div class="hidden md:block">
                     <div class="flex items-center justify-between mb-4">
                         <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
@@ -264,7 +240,6 @@
                     <div class="h-1 w-12 bg-brand-red rounded mb-4"></div>
                 </div>
 
-                <!-- Shared Content -->
                 <div id="content-values" class="expand-content max-h-0 opacity-0 overflow-hidden">
                     <p class="text-[13px] md:text-sm text-slate-600 leading-relaxed mt-3 md:mt-0 pt-3 md:pt-0 border-t border-slate-100 md:border-none">
                         We integrate absolute honesty, integrity, and business ethics into all operations. Our pillars include Strong Leadership, Teamwork, Continuous Innovation, Determination, and Fair-mindedness.
@@ -275,7 +250,6 @@
         </div>
     </div>
 
-    <!-- OUR DIVISIONS Section -->
     <section id="divisions" class="py-24 px-6 max-w-7xl mx-auto relative bg-white border-t border-slate-100">
         <div class="text-center mb-16">
             <span class="text-brand-orange text-xs font-bold tracking-[0.2em] uppercase">Core Operations</span>
@@ -285,7 +259,6 @@
         
         <div class="grid md:grid-cols-3 gap-8 items-start">
             
-            <!-- Division 1: Accommodation -->
             <div class="group flex flex-col rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-max">
                 <div class="h-64 overflow-hidden relative shrink-0">
                     <img src="https://images.unsplash.com/photo-1559599189-fe84dea4eb79?q=80&w=2069&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Student Accommodation Building">
@@ -318,7 +291,6 @@
                 </div>
             </div>
 
-            <!-- Division 2: Student Logistics -->
             <div class="group flex flex-col rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-max">
                 <div class="h-64 overflow-hidden relative shrink-0">
                     <img src="transport.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Urban Transport Bus in CBD">
@@ -347,7 +319,6 @@
                 </div>
             </div>
 
-            <!-- Division 3: Property Maintenance & Cleaning -->
             <div class="group flex flex-col rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-max">
                 <div class="h-64 overflow-hidden relative shrink-0">
                     <img src="https://images.unsplash.com/photo-1585421514738-01798e348b17?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Professional Cleaning Equipment">
@@ -379,7 +350,6 @@
         </div>
     </section>
 
-    <!-- Market Analysis Section -->
     <section id="market" class="py-20 bg-slate-50 text-slate-900 relative border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2 order-2 md:order-1">
@@ -408,7 +378,6 @@
         </div>
     </section>
 
-    <!-- Leadership / Team Section -->
     <section id="team" class="py-24 px-6 max-w-7xl mx-auto relative bg-white">
         <div class="text-center mb-16">
             <span class="text-brand-orange text-xs font-bold tracking-[0.2em] uppercase">Executive Structure</span>
@@ -416,17 +385,15 @@
         </div>
         
         <div class="grid md:grid-cols-3 gap-8 items-start max-w-6xl mx-auto">
-            <!-- CEO -->
             <div class="bg-slate-50 border border-slate-100 rounded-xl p-8 text-center shadow-lg hover:-translate-y-2 transition-transform duration-300">
-                <div class="w-24 h-24 mx-auto bg-slate-200 rounded-full mb-6 flex items-center justify-center text-slate-400">
-                    <i class="fas fa-user-tie text-3xl"></i>
+                <div class="w-24 h-24 mx-auto bg-slate-200 rounded-full mb-6 flex items-center justify-center overflow-hidden">
+                    <img src="harrison.jpg" alt="Sibiya Harrison" class="w-full h-full object-cover">
                 </div>
                 <h3 class="text-xl font-bold heading-font uppercase text-slate-900">Sibiya Harrison</h3>
                 <p class="text-sm font-bold text-brand-orange uppercase tracking-wider mt-1 mb-4">Managing Director (CEO)</p>
                 <p class="text-sm text-slate-600">Driving the vision and operational excellence of Arise Operations and Projects since 2021.</p>
             </div>
 
-            <!-- Administrator -->
             <div class="bg-slate-50 border border-slate-100 rounded-xl p-8 text-center shadow-lg hover:-translate-y-2 transition-transform duration-300">
                 <div class="w-24 h-24 mx-auto bg-slate-200 rounded-full mb-6 flex items-center justify-center text-slate-400">
                     <i class="fas fa-user-tie text-3xl"></i>
@@ -436,7 +403,6 @@
                 <p class="text-sm text-slate-600">Ensuring seamless day-to-day administrative operations, facility management, and tenant well-being.</p>
             </div>
 
-            <!-- Logistics Manager -->
             <div class="bg-slate-50 border border-slate-100 rounded-xl p-8 text-center shadow-lg hover:-translate-y-2 transition-transform duration-300">
                 <div class="w-24 h-24 mx-auto bg-slate-200 rounded-full mb-6 flex items-center justify-center text-slate-400">
                     <i class="fas fa-bus text-3xl"></i>
@@ -448,7 +414,6 @@
         </div>
     </section>
 
-    <!-- Formal Contact Section -->
     <section id="contact" class="relative py-32 z-10 overflow-hidden bg-slate-900 border-t border-slate-800">
         <div class="absolute inset-0 z-0 opacity-20">
             <div class="w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-700 via-slate-900 to-black"></div>
@@ -471,11 +436,9 @@
         </div>
     </section>
 
-    <!-- Complete Footer -->
     <footer class="bg-[#050505] text-white py-16 border-t border-gray-800 relative z-20">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-12 mb-12 max-w-4xl mx-auto">
-                <!-- Column 1: Logo & Socials -->
                 <div class="flex flex-col items-center md:items-start text-center md:text-left">
                     <div class="bg-white inline-block px-4 py-3 rounded mb-6">
                         <img src="ariselogo1.png" class="h-10 object-contain" alt="Arise Logo">
@@ -493,7 +456,6 @@
                     </div>
                 </div>
 
-                <!-- Column 2: Arise Operations & Projects -->
                 <div class="text-center md:text-left">
                     <h4 class="text-brand-orange font-bold uppercase text-xs tracking-widest mb-6">Arise Operations & Projects</h4>
                     <ul class="text-gray-400 text-sm space-y-3">
@@ -508,7 +470,6 @@
                 </div>
             </div>
 
-            <!-- Bottom Bar -->
             <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-gray-500 uppercase tracking-[0.2em]">
                 <p>&copy; 2026 Arise Operations and Projects (Pty) Ltd.</p>
                 <p>Digital Infrastructure Built by <span class="text-brand-orange font-bold">Automania</span></p>
@@ -516,7 +477,6 @@
         </div>
     </footer>
 
-    <!-- Interactive Scripts -->
     <script>
         // Mobile Menu Toggle Logic
         function toggleMobileMenu() {
